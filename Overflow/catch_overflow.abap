@@ -1,3 +1,7 @@
+DATA: lr_ref   TYPE REF TO data,
+      lx_error TYPE REF TO cx_sy_arithmetic_overflow,
+      lf_text  TYPE string.
+
 TRY.
   <ziel> = <quelle> * lf_umren / lf_umrez.
   CATCH cx_sy_arithmetic_overflow INTO lx_error.
